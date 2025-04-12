@@ -55,6 +55,90 @@
     }
   </style>
 </head>
+  <section class="templates">
+  <h2>Explore High-Impact Templates</h2>  <!-- Categories Navigation -->  <div class="categories">
+    <button data-category="clothing">Clothing</button>
+    <button data-category="jewellery">Jewellery</button>
+    <button data-category="portfolio">Portfolio</button>
+    <button data-category="tech">Tech</button>
+    <button data-category="agency">Digital Agency</button>
+    <button data-category="food">Food & Beverage</button>
+    <button data-category="interior">Interior Design</button>
+    <button data-category="health">Health & Wellness</button>
+    <button data-category="education">Education</button>
+    <button data-category="travel">Travel & Adventure</button>
+  </div>  <!-- Templates Grid -->  <div class="template-grid">
+    <!-- Example card (Repeat for each template under each category) -->
+    <div class="template-card" data-category="clothing">
+      <img src="images/clothing-template1.jpg" alt="Clothing Template 1">
+      <h3>Clothing Template 1</h3>
+    </div><div class="template-card" data-category="jewellery">
+  <img src="images/jewellery-template1.jpg" alt="Jewellery Template 1">
+  <h3>Jewellery Template 1</h3>
+</div>
+
+<!-- Add more template cards up to 10 per category -->
+
+  </div>
+</section><style>
+  .templates {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    color: #222;
+    text-align: center;
+  }
+  .categories {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .categories button {
+    padding: 10px 20px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .template-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .template-card:hover {
+    transform: scale(1.03);
+  }
+  .template-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .template-card h3 {
+    padding: 10px;
+    font-size: 1rem;
+  }
+</style><script>
+  const categoryButtons = document.querySelectorAll('[data-category]');
+  const templateCards = document.querySelectorAll('.template-card');
+
+  categoryButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedCategory = btn.dataset.category;
+      templateCards.forEach(card => {
+        card.style.display = card.dataset.category === selectedCategory ? 'block' : 'none';
+      });
+    });
+  });
+</script>
 <body>
   <div class="toggle-container">
     <button id="toggleTheme">Toggle Theme</button>
