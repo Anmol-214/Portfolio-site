@@ -1,120 +1,60 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Design Vortex IO</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(to right, #5f72be, #9921e8);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .contact {
-      background-color: #ffffff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: -20px;
-      margin-bottom: 40px;
-    }
-    .templates {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .template-card {
-      background: white;
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
-    }
-    .template-card img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-    .category-title {
-      font-size: 1.6rem;
-      margin-top: 40px;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #eeeeee;
-      margin-top: 60px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Design Vortex</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body><header>
-  <h1>Design Vortex IO</h1>
-  <p>Explore high-impact templates tailored for your brand.</p>
-</header><section class="contact">
-  <h2>Contact Us</h2>
-  <p>Email: anmolshishwal9@gmail.com</p>
-  <p>Instagram: @design_vortex.io</p>
-</section><section>
-  <h2 class="category-title">Clothing Templates</h2>
-  <div class="templates">
-    <div class="template-card"><img src="images/clothing1.jpg" alt="Clothing Template 1"></div>
-    <div class="template-card"><img src="images/clothing2.jpg" alt="Clothing Template 2"></div>
-  </div>  <h2 class="category-title">Jewellery Templates</h2>
-  <div class="templates">
-    <div class="template-card"><img src="images/jewellery1.jpg" alt="Jewellery Template 1"></div>
-    <div class="template-card"><img src="images/jewellery2.jpg" alt="Jewellery Template 2"></div>
-  </div>  <h2 class="category-title">Tech Templates</h2>
-  <div class="templates">
-    <div class="template-card"><img src="images/tech1.jpg" alt="Tech Template 1"></div>
-    <div class="template-card"><img src="images/tech2.jpg" alt="Tech Template 2"></div>
-  </div>  <h2 class="category-title">Food Templates</h2>
-  <div class="templates">
-    <div class="template-card"><img src="images/food1.jpg" alt="Food Template 1"></div>
-    <div class="template-card"><img src="images/food2.jpg" alt="Food Template 2"></div>
-  </div>  <h2 class="category-title">Events Templates</h2>
-  <div class="templates">
-    <div class="template-card"><img src="images/events1.jpg" alt="Events Template 1"></div>
-    <div class="template-card"><img src="images/events2.jpg" alt="Events Template 2"></div>
-  </div>  <h2 class="category-title">Travel Templates</h2>
-  <div class="templates">
-    <div class="template-card"><img src="images/travel1.jpg" alt="Travel Template 1"></div>
-    <div class="template-card"><img src="images/travel2.jpg" alt="Travel Template 2"></div>
-  </div>  <h2 class="category-title">Fitness Templates</h2>
-  <div class="templates">
-    <div class="template-card"><img src="images/fitness1.jpg" alt="Fitness Template 1"></div>
-    <div class="template-card"><img src="images/fitness2.jpg" alt="Fitness Template 2"></div>
-  </div>  <h2 class="category-title">Interior Templates</h2>
-  <div class="templates">
-    <div class="template-card"><img src="images/interior1.jpg" alt="Interior Template 1"></div>
-    <div class="template-card"><img src="images/interior2.jpg" alt="Interior Template 2"></div>
-  </div>  <h2 class="category-title">Portfolio Templates</h2>
-  <div class="templates">
-    <div class="template-card"><img src="images/portfolio1.jpg" alt="Portfolio Template 1"></div>
-    <div class="template-card"><img src="images/portfolio2.jpg" alt="Portfolio Template 2"></div>
-  </div>
-</section><footer>
-  &copy; 2025 Design Vortex IO. All rights reserved.
-</footer></body>
+<body>
+  <div class="toggle-container">
+    <button id="toggleTheme">Toggle Theme</button>
+  </div>  <header class="hero">
+    <a href="index.html">
+      <img src="logo.png" alt="Design Vortex io Logo" style="height: 60px; margin: 20px;">
+    </a>
+    <img src="logo.png" alt="Design Vortex Logo" class="logo" />
+    <h1 class="fade-in">Welcome to <span>Design Vortex</span></h1>
+    <p class="fade-in delay">Crafting clean & modern designs</p>
+    <a href="https://instagram.com/design_vortex.io" target="_blank" class="btn fade-in delay2">@design_vortex.io</a>
+  </header>  <section class="contact">
+    <h2>Let’s Connect</h2>
+    <p>Email: anmolshishwal9@gmail.com</p>
+    <p>Instagram: @design_vortex.io</p>
+  </section>  <div class="container">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>UI/UX Concept</h3>
+        <p>Clean and minimal web interface design.</p>
+      </div>
+      <div class="card">
+        <h3>Logo Design</h3>
+        <p>Modern and stylish logo branding project.</p>
+      </div>
+    </div><h2>Contact Me</h2>
+<form class="contact-form">
+  <input type="text" placeholder="Your Name" required />
+  <input type="email" placeholder="Your Email" required />
+  <textarea placeholder="Your Message"></textarea>
+  <button type="submit">Send</button>
+</form>
+
+  </div>  <section class="about">
+    <h2>About Design Vortex</h2>
+    <p>
+      Welcome to <strong>Design Vortex io</strong> – a creative space where design meets innovation.<br>
+      मैं <strong>Design Vortex io</strong> के ज़रिए आपके ideas को एक यूनिक और स्टाइलिश डिज़ाइन में बदलता हूँ।<br><br>I specialize in modern logos, UI, and visual branding that leave a lasting impact.<br>
+  मैं फ्यूचरिस्टिक और क्लीन डिज़ाइन्स में विश्वास रखता हूं जो आपके ब्रांड को एक प्रोफेशनल टच देते हैं।<br><br>
+
+  Let’s build something amazing together!<br>
+  चलिए मिलकर कुछ कमाल का बनाते हैं!
+</p>
+
+  </section>  <script>
+    const toggleBtn = document.getElementById('toggleTheme');
+    toggleBtn.addEventListener('click', () => {
+      const html = document.documentElement;
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    });
+  </script></body>
 </html>
