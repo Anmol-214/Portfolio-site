@@ -1,9 +1,59 @@
-<!DOCTYPE html><html lang="en" data-theme="dark">
+<!DOCTYPE html><html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Design Vortex</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffffff, #f2f4f8);
+      color: #222;
+    }
+    header.hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: radial-gradient(circle at top, #e0eaff, #ffffff);
+    }
+    .btn {
+      background-color: #0077ff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 15px;
+      display: inline-block;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f0f0f0;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <div class="toggle-container">
@@ -12,26 +62,42 @@
     <a href="index.html">
       <img src="logo.png" alt="Design Vortex io Logo" style="height: 60px; margin: 20px;">
     </a>
-    <img src="logo.png" alt="Design Vortex Logo" class="logo" />
     <h1 class="fade-in">Welcome to <span>Design Vortex</span></h1>
     <p class="fade-in delay">Crafting clean & modern designs</p>
     <a href="https://instagram.com/design_vortex.io" target="_blank" class="btn fade-in delay2">@design_vortex.io</a>
-  </header>  <section class="contact">
-    <h2>Let’s Connect</h2>
-    <p>Email: anmolshishwal9@gmail.com</p>
-    <p>Instagram: @design_vortex.io</p>
-  </section>  <div class="container">
-    <h2>My Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>UI/UX Concept</h3>
-        <p>Clean and minimal web interface design.</p>
-      </div>
-      <div class="card">
-        <h3>Logo Design</h3>
-        <p>Modern and stylish logo branding project.</p>
-      </div>
-    </div><h2>Contact Me</h2>
+  </header>  <div class="container">
+    <h2>Contact</h2>
+    <section class="contact">
+      <p><strong>Email:</strong> anmolshishwal9@gmail.com</p>
+      <p><strong>Instagram:</strong> @design_vortex.io</p>
+    </section><h2>My Projects</h2>
+<div class="projects">
+  <div class="card">
+    <h3>UI/UX Concept</h3>
+    <p>Clean and minimal web interface design.</p>
+  </div>
+  <div class="card">
+    <h3>Logo Design</h3>
+    <p>Modern and stylish logo branding project.</p>
+  </div>
+</div>
+
+<h2>About Design Vortex</h2>
+<p>
+  <strong>Design Vortex io</strong> is a creative space where design meets innovation.<br>
+  I specialize in crafting modern, stylish, and impactful visual experiences — from logos and UI to complete branding.<br>
+  Whether you're a startup or a creator, I'm here to bring your ideas to life with unique aesthetics and futuristic vibes.<br>
+  Let's build something amazing together!
+</p>
+
+<p style="margin-top: 30px;">
+  <strong>Design Vortex io</strong> एक ऐसा क्रिएटिव स्पेस है जहाँ डिज़ाइन और इनोवेशन मिलते हैं।<br>
+  मैं मॉडर्न, स्टाइलिश और प्रभावशाली डिज़ाइन्स बनाता हूँ — लोगो, यूआई से लेकर पूरी ब्रांडिंग तक।<br>
+  चाहे आप एक स्टार्टअप हों या क्रिएटर, मैं आपके आइडिया को यूनिक और फ्यूचरिस्टिक लुक देने के लिए यहाँ हूँ।<br>
+  चलिए मिलकर कुछ बेहतरीन बनाते हैं!
+</p>
+
+<h2>Let’s Connect</h2>
 <form class="contact-form">
   <input type="text" placeholder="Your Name" required />
   <input type="email" placeholder="Your Email" required />
@@ -39,18 +105,9 @@
   <button type="submit">Send</button>
 </form>
 
-  </div>  <section class="about">
-    <h2>About Design Vortex</h2>
-    <p>
-      Welcome to <strong>Design Vortex io</strong> – a creative space where design meets innovation.<br>
-      मैं <strong>Design Vortex io</strong> के ज़रिए आपके ideas को एक यूनिक और स्टाइलिश डिज़ाइन में बदलता हूँ।<br><br>I specialize in modern logos, UI, and visual branding that leave a lasting impact.<br>
-  मैं फ्यूचरिस्टिक और क्लीन डिज़ाइन्स में विश्वास रखता हूं जो आपके ब्रांड को एक प्रोफेशनल टच देते हैं।<br><br>
-
-  Let’s build something amazing together!<br>
-  चलिए मिलकर कुछ कमाल का बनाते हैं!
-</p>
-
-  </section>  <script>
+  </div>  <footer>
+    <p>&copy; 2025 Design Vortex io | Crafted with creativity</p>
+  </footer>  <script>
     const toggleBtn = document.getElementById('toggleTheme');
     toggleBtn.addEventListener('click', () => {
       const html = document.documentElement;
