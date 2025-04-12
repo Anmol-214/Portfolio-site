@@ -53,92 +53,53 @@
       background: #f0f0f0;
       margin-top: 40px;
     }
+    .templates {
+      padding: 40px 20px;
+      background: #f9f9f9;
+      color: #222;
+      text-align: center;
+    }
+    .categories {
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .categories button {
+      padding: 10px 20px;
+      border: none;
+      background: #333;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .template-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .template-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .template-card:hover {
+      transform: scale(1.03);
+    }
+    .template-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .template-card h3 {
+      padding: 10px;
+      font-size: 1rem;
+    }
   </style>
 </head>
-  <section class="templates">
-  <h2>Explore High-Impact Templates</h2>  <!-- Categories Navigation -->  <div class="categories">
-    <button data-category="clothing">Clothing</button>
-    <button data-category="jewellery">Jewellery</button>
-    <button data-category="portfolio">Portfolio</button>
-    <button data-category="tech">Tech</button>
-    <button data-category="agency">Digital Agency</button>
-    <button data-category="food">Food & Beverage</button>
-    <button data-category="interior">Interior Design</button>
-    <button data-category="health">Health & Wellness</button>
-    <button data-category="education">Education</button>
-    <button data-category="travel">Travel & Adventure</button>
-  </div>  <!-- Templates Grid -->  <div class="template-grid">
-    <!-- Example card (Repeat for each template under each category) -->
-    <div class="template-card" data-category="clothing">
-      <img src="images/clothing-template1.jpg" alt="Clothing Template 1">
-      <h3>Clothing Template 1</h3>
-    </div><div class="template-card" data-category="jewellery">
-  <img src="images/jewellery-template1.jpg" alt="Jewellery Template 1">
-  <h3>Jewellery Template 1</h3>
-</div>
-
-<!-- Add more template cards up to 10 per category -->
-
-  </div>
-</section><style>
-  .templates {
-    padding: 40px 20px;
-    background: #f9f9f9;
-    color: #222;
-    text-align: center;
-  }
-  .categories {
-    margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  .categories button {
-    padding: 10px 20px;
-    border: none;
-    background: #333;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .template-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-  }
-  .template-card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: 0.3s;
-  }
-  .template-card:hover {
-    transform: scale(1.03);
-  }
-  .template-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  .template-card h3 {
-    padding: 10px;
-    font-size: 1rem;
-  }
-</style><script>
-  const categoryButtons = document.querySelectorAll('[data-category]');
-  const templateCards = document.querySelectorAll('.template-card');
-
-  categoryButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const selectedCategory = btn.dataset.category;
-      templateCards.forEach(card => {
-        card.style.display = card.dataset.category === selectedCategory ? 'block' : 'none';
-      });
-    });
-  });
-</script>
 <body>
   <div class="toggle-container">
     <button id="toggleTheme">Toggle Theme</button>
@@ -149,7 +110,33 @@
     <h1 class="fade-in">Welcome to <span>Design Vortex</span></h1>
     <p class="fade-in delay">Crafting clean & modern designs</p>
     <a href="https://instagram.com/design_vortex.io" target="_blank" class="btn fade-in delay2">@design_vortex.io</a>
-  </header>  <div class="container">
+  </header>  <section class="templates">
+    <h2>Explore High-Impact Templates</h2>
+    <div class="categories">
+      <button data-category="clothing">Clothing</button>
+      <button data-category="jewellery">Jewellery</button>
+      <button data-category="portfolio">Portfolio</button>
+      <button data-category="tech">Tech</button>
+      <button data-category="agency">Digital Agency</button>
+      <button data-category="food">Food & Beverage</button>
+      <button data-category="interior">Interior Design</button>
+      <button data-category="health">Health & Wellness</button>
+      <button data-category="education">Education</button>
+      <button data-category="travel">Travel & Adventure</button>
+    </div>
+    <div class="template-grid">
+      <!-- Example for each category -->
+      <div class="template-card" data-category="clothing">
+        <img src="images/clothing-template1.jpg" alt="Clothing Template 1">
+        <h3>Clothing Template 1</h3>
+      </div>
+      <div class="template-card" data-category="jewellery">
+        <img src="images/jewellery-template1.jpg" alt="Jewellery Template 1">
+        <h3>Jewellery Template 1</h3>
+      </div>
+      <!-- Repeat similar blocks up to 10 for each category -->
+    </div>
+  </section>  <div class="container">
     <h2>Contact</h2>
     <section class="contact">
       <p><strong>Email:</strong> anmolshishwal9@gmail.com</p>
@@ -173,11 +160,10 @@
   Whether you're a startup or a creator, I'm here to bring your ideas to life with unique aesthetics and futuristic vibes.<br>
   Let's build something amazing together!
 </p>
-
 <p style="margin-top: 30px;">
-  <strong>Design Vortex io</strong> एक ऐसा क्रिएटिव स्पेस है जहाँ डिज़ाइन और इनोवेशन मिलते हैं।<br>
-  मैं मॉडर्न, स्टाइलिश और प्रभावशाली डिज़ाइन्स बनाता हूँ — लोगो, यूआई से लेकर पूरी ब्रांडिंग तक।<br>
-  चाहे आप एक स्टार्टअप हों या क्रिएटर, मैं आपके आइडिया को यूनिक और फ्यूचरिस्टिक लुक देने के लिए यहाँ हूँ।<br>
+  <strong>Design Vortex io</strong> एक एसा क्रिएटिव स्पेस है जहाँ डिज़ाइन और इनोवेशन मिलते हैं।<br>
+  मैं मॉडर्न, स्टाइलिश और प्रभावशाली डिज़ाइन्स बनाता हूं — लोगो, यूआई से लेकर पूरी ब्रांडिंग तक।<br>
+  चाहे आप एक स्टार्टअप हों या क्रिएटर, मैं आपके आइडिया को यूनिक और फ्यूचरिस्टिक लुक देने के लिए यहां हूँ।<br>
   चलिए मिलकर कुछ बेहतरीन बनाते हैं!
 </p>
 
@@ -196,6 +182,23 @@
     toggleBtn.addEventListener('click', () => {
       const html = document.documentElement;
       html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    });
+
+    const categoryButtons = document.querySelectorAll('[data-category]');
+    const templateCards = document.querySelectorAll('.template-card');
+
+    categoryButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedCategory = btn.dataset.category;
+        templateCards.forEach(card => {
+          card.style.display = card.dataset.category === selectedCategory ? 'block' : 'none';
+        });
+        <nav style="position: sticky; top: 0; background: #fff; padding: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 1000;">
+  <a href="#projects">Projects</a>
+  <a href="#templates">Templates</a>
+  <a href="#contact">Contact</a>
+</nav>
+      });
     });
   </script></body>
 </html>
