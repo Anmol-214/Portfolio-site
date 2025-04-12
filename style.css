@@ -24,7 +24,11 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
 }
-
+.logo {
+  height: 60px;
+  margin: 20px auto;
+  display: block;
+}
 .toggle-container {
   position: absolute;
   top: 20px;
