@@ -2,39 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Design Vortex | Anmol Shishwal</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Design Vortex | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      padding: 30px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #777;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #34495e;
+      border-left: 6px solid #3498db;
+      padding-left: 12px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .tools {
+      font-weight: bold;
+      color: #16a085;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Design Vortex</h1>
-    <p>By Anmol Shishwal</p>
+    <p>Crafting sleek design experiences</p>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate designer focused on crafting stylish, modern, and visually impactful designs that leave a lasting impression. 
-    </p>
-    <p>
-      I'm on a journey to elevate my design skills and showcase my work through a sleek portfolio and growing presence on Instagram. Whether it’s logos, brand identities, or UI/UX concepts, I aim to deliver work that blends creativity with clarity.
-    </p>
-  </section>
-
-  <section class="projects">
+  <section id="projects">
     <h2>Projects</h2>
-    <p>Coming soon...</p>
-  </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:anmolshishwal9@gmail.com">anmolshishwal9@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/design_vortex.io" target="_blank">@design_vortex.io</a></p>
+    <div class="project-card">
+      <h3>Modern UI/UX Concept – Wellness App</h3>
+      <p>A minimal and calming interface for a mobile wellness app, focusing on daily goals, mindfulness, and personalized routines.</p>
+      <p class="tools">Tools: Figma, Adobe XD</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Brand Identity – Organic Café</h3>
+      <p>Crafted a full identity package including logo, color palette, typography, and packaging mockups for a local eco-conscious café.</p>
+      <p class="tools">Tools: Illustrator, Photoshop, Canva</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Poster Art – Cultural Fusion</h3>
+      <p>A bold poster design merging modern art with regional dance forms. This piece was featured on @design_vortex.io’s Instagram and gained excellent engagement.</p>
+      <p class="tools">Tools: Procreate, Photoshop</p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Anmol Shishwal</p>
+    © 2025 Design Vortex. All rights reserved.
   </footer>
+
 </body>
 </html>
